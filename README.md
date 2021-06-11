@@ -10,33 +10,29 @@ Aplicativo gerenciador de tarefas desenvolvido com NODE JS e MongoDB . Ele segue
 * Upload de avatar
 * Endpoints API
 * Métodos	Endpoints	Acesso	Descrição
-* PUBLICAR	/Comercial	Público	Inscrever-se
-* PUBLICAR	/ users / login	Público	Conecte-se
-* OBTER	/ users / me	Privado	Perfil do usuário
-* CORREÇÃO	/ users / me	Privado	Atualizar perfil
-* PUBLICAR	/ users / me / avatar	Privado	Carregar foto do perfil
-* OBTER	/ users / userID / avataar	Privado	Ver foto do perfil
-* EXCLUIR	/ users / me / avatar	Privado	Excluir foto do perfil
-* EXCLUIR	/ users / me	Privado	Deletar conta
-* PUBLICAR	/ users / tasks	Privado	Crie uma tarefa
-* OBTER	/ users / tasks / taskID	Privado	Ver uma tarefa
-* OBTER	/ users / tasks	Privado	Ver todas as tarefas
-* OBTER	/ usuários / tarefas? limite = 2	Privado	Limite o resultado a 2
-* OBTER	/ users / tasks? sortBy = createdAt: desc	Privado	Classificar por ordem decrescente da data de criação
-* OBTER	/ users / tasks? sortBy = createdAt: asc	Privado	Classificar por ordem crescente de data de criação
-* OBTER	/ users / tasks? skip = 3	Privado	Resultado de paginação
-* CORREÇÃO	/ users / tasks / taskID	Privado	Atualizar uma tarefa
-* EXCLUIR	/ users / tasks / taskID	Privado	Apagar uma Tarefa
-* PUBLICAR	/ users / logout	Privado	Sair de uma conta
-* PUBLICAR	/ users / logoutall	Privado	Sair de todas as contas
-* Link de domínio hospedado
-API do gerenciador de tarefas
 
-Link da coleção do carteiro
-Coleção compartilhada da API do gerenciador de tarefas
+| Metodos | Endpoints                          | Accesso | Descrição                                |
+| ------- | ---------------------------------- | ------- | ---------------------------------------- |
+| POST    | /users                             | Public  | Inscrever-se                             |
+| POST    | /users/login                       | Public  | Conecte-se                               |
+| GET     | /users/me                          | Private | Perfil do usuário                        |
+| PATCH   | /users/me                          | Private | Atualizar perfil                         |
+| POST    | /users/me/avatar                   | Private | Carregar foto do perfil                  |
+| GET     | /users/userID/avataar              | Private | Ver foto do perfil                       |
+| DELETE  | /users/me/avatar                   | Private | Excluir foto do perfil                   |
+| DELETE  | /users/me                          | Private | Deletar conta                            |
+| POST    | /users/tasks                       | Private | Criar uma Tarefa                         |
+| GET     | /users/tasks/taskID                | Private | Visualizar uma Tarefa                    |
+| GET     | /users/tasks                       | Private | Visualizar todas tarefas                 |
+| GET     | /users/tasks?limit=2               | Private | Limite o resultado a 2                   |
+| GET     | /users/tasks?sortBy=createdAt:desc | Private | Classificar por ordem decrescente da data de criação |
+| GET     | /users/tasks?sortBy=createdAt:asc  | Private | Classificar por ordem crescente de data de criação  |
+| GET     | /users/tasks?skip=3                | Private | Resultado de paginação                        |
+| PATCH   | /users/tasks/taskID                | Private | Atualizar uma Tarefa                     |
+| DELETE  | /users/tasks/taskID                | Private | Deletar uma tarefa                       |
+| POST    | /users/logout                      | Private | Sair de uma conta                        |
+| POST    | /users/logoutall                   | Private | Sair de todas as conta                      |
 
-Contribuindo
-Você pode bifurcar o repositório e enviar solicitação de pull ou entrar em contato facilmente comigo via twitter => Kater Akeren
 
-Vulnerabilidades de segurança
-Se você descobrir uma vulnerabilidade de segurança no projeto, crie um problema. Todas as vulnerabilidades de segurança serão prontamente tratadas e apreciadas.
+
+
